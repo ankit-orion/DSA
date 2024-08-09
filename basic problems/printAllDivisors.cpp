@@ -1,31 +1,42 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define fast_io ios_base::sync_with_stdio(false);cin.tie(NULL)
-void init_code(){
-fast_io;
-#ifndef ONLINE_JUDGE
-freopen("input.in", "r", stdin);
-freopen("output.in", "w", stdout);
-#endif
-}
-int hypo(int base, int height){
-    int pytha;
-    pytha = (int)sqrt((base*base + height*height));
-    return pytha;
+void solve(){
+	int n;
+	cin >> n;
+	int health[n];
+	for(int i = 0; i < n; i++) cin >> health[i];
+		int count_one=0;
+		int count =0;
+		for(int i = 0 ; i < n ; i++){
+
+			if(health[i] ==
+			 1){
+				if(count_one%2==0){
+					count++;
+				}
+				count_one ++;
+
+			}
+			else{
+				count++;
+			}
+		}
+
+		cout<<count << endl;
+
 }
 int main() {
-	init_code();
-	// your code goes here
-	int t;
-	cin >> t;
-	while(t--){
-	    int x1, x2, y1, y2;
-	    cin >> x1 >>y1 >> x2 >> y2;
-	    int distanceBOB = hypo(x1, y1);
-	    int distanceALEX = hypo(x2, y2);
-	    if(distanceBOB > distanceALEX) cout <<"ALEX" << endl;
-	    else if(distanceALEX > distanceBOB) cout <<"BOB" << endl;
-	    else cout << "EQUAL" << endl;
-	}
-	return 0;
+    cin.tie(0)->sync_with_stdio(0);
+#ifndef ONLINE_JUDGE
+    freopen("Error.txt", "w", stderr);
+#endif
+#ifndef ONLINE_JUDGE
+    freopen("input.in", "r", stdin);
+    freopen("output.in", "w", stdout);
+#endif
+    int t;
+    cin >> t;
+    while(t--){
+    	solve();
+    }
 }

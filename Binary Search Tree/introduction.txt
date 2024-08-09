@@ -1,0 +1,21 @@
+pre req -> traversal
+how bst is different from bs ?
+in bst left node should be lessser than the right node and right node should 
+be lesser than the node's value 
+i.e : L < N < R
+Also entire left subtree should be a bst and same goes for right subtree 
+
+
+are duplicates allowed -> Ideally duplicaets are not allowed 
+but in some books it says duplicaets are allowed 
+If duplicaets are allowed then the comditio for bst is 
+L <= N <= R 
+
+Why BST ?
+In binary search tree all the height of the tree is (logN)
+but in binary trees the height is O(n)
+
+Search in Binary tree is O(N)
+but search in binary search trees is O(logn)
+because we implement binary search in binary search(kind of binary search)
+

@@ -1,0 +1,12 @@
+Reresentaion -> similar to stack
+
+How to identify heap ?
+K should be given and smallest/largest should be given \
+
+Which heap to choose ?
+There are two types of heap 
+1. Min heap
+2. Max heap
+
+if k+ smallest -> create Max heap
+if k + largest = create Min heap 

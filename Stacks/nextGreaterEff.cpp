@@ -7,7 +7,7 @@ void solve(int arr[], int n)
     // traversing array from right to left
     for (int i = n - 1; i >= 0; i--)
     {
-        // first codintion if the stack is empty it meand there's no element on right of the array which
+        // first codintion if the stack is empty it means there's no element on right of the array which
         // is greater the the current element also it handles the edge case
         // that last index of array will be -1 as there is no element greater
         // than the current ellement

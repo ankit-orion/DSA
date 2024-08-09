@@ -48,4 +48,6 @@ int main(){
     llist = push(llist, 10);
     llist = push(llist, 10);
     cout << checkPalindrome(llist);
+    return 0;
+
 }
